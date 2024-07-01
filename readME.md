@@ -1,4 +1,4 @@
-Curso: https://www.udemy.com/course/golang-postgres-e-react-num-projeto-fullstack-de-financas/
+# testes
 
 Comando para criar o container com mysql
 `docker run -d --name postgres-go-next -p 3306:3306 -e MYSQL_ROOT_PASSWORD=root -e MYSQL_DATABASE=finance -e MYSQL_USER=golang -e MYSQL_PASSWORD=golang mysql:latest`
@@ -12,3 +12,5 @@ criar a tabela de migrations
 `createdb --username=postgres --owner=postgres go_finance`
 
 `migrate -path db/migration -database "postgresql://postgres:postgres@172.17.0.3:5432/go_finance?sslmode=disable" -verbose up`
+
+sqlc generate para rodar
